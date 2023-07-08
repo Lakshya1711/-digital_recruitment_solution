@@ -27,6 +27,21 @@
         <li><a href="#contact">Contact Us</a></li>
         <li><a href="login.html">Login</a></li>
       </ul>
+      <div class="search">
+        <span class="icon-1">
+          <ion-icon name="search-outline" class="searchbtn"></ion-icon>
+          <ion-icon name="close-outline" class="closebtn"></ion-icon>
+        </span>
+      </div>
+      <div class="searchbox">
+        <input
+          type="text"
+          name=""
+          id="myInput"
+          placeholder="Search Here..."
+          onkeyup="searchFun()"
+        />
+      </div>
     </nav>
 
     <section id="home">
@@ -187,10 +202,7 @@
         </div>
         <div class="details">
           <h4 class="address">Address</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Cupiditate, qui!
-          </p>
+          <p>Royal Tower, sector-62 , Nodia</p>
           <h4 class="mobile">Mobile</h4>
           <p>+91-*********</p>
           <h4 class="mail">Email</h4>
@@ -202,5 +214,14 @@
         © 2023 copywritetoDRS.
       </footer>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="Search.js"></script>
   </body>
 </html>

@@ -38,6 +38,64 @@
   box-shadow: 0 0 10px white;
 }
 
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.searchbox {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #ffffff;
+  align-items: center;
+  padding: 0 30px;
+  transition: 0.5s ease-in-out;
+}
+
+.searchbox.active {
+  width: 100%;
+  right: 0;
+  visibility: visible;
+}
+.searchbox input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  color: #333;
+  font-size: 1.25rem;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.searchbtn {
+  position: relative;
+  left: 30px;
+  top: 2.5px;
+  transition: 0.5s ease-in-out;
+}
+.searchbtn.active {
+  left: 0;
+}
+.closebtn {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  scale: 0;
+}
+.closebtn.active {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+  scale: 1;
+}
 #home {
   display: flex;
   flex-direction: column;
